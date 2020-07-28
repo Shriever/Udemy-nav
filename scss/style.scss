@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  padding: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(#000, 0.2);
+
+  span {
+    opacity: 0.5;
+  }
+  .logo-container {
+    flex: 1 0 auto;
+
+    .img-work {
+      width: 110px;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .search {
+    flex: 0 1 0;
+    padding: 0 0.75rem;
+  }
+  .cart {
+    flex: 0 1 0;
+    padding: 0 0.75rem;
+  }
+}
