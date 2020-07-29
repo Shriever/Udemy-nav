@@ -1,0 +1,22 @@
+$font-stack: "Roboto", sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input:focus {
+  outline: none;
+}
+
+.logo {
+  width: 110px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}

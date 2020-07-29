@@ -1,16 +1,17 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@import "./globals";
 
-.section {
+@mixin layout {
   display: flex;
   padding: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+
   background-color: #fff;
+}
+
+.small {
+  @include layout;
+  height: 4rem;
   box-shadow: 0 5px 10px rgba(#000, 0.2);
 
   span {
@@ -18,14 +19,6 @@
   }
   .logo-container {
     flex: 1 0 auto;
-
-    .img-work {
-      width: 110px;
-      margin: 0 auto;
-    }
-    img {
-      width: 100%;
-    }
   }
   .search {
     flex: 0 1 0;
@@ -34,5 +27,88 @@
   .cart {
     flex: 0 1 0;
     padding: 0 0.75rem;
+  }
+}
+
+.big {
+  display: none;
+  height: 5rem;
+  border-bottom: 1px solid #ccc;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 15px;
+  align-items: center;
+
+  .logo {
+    width: 120px;
+    flex-grow: 1;
+  }
+  .text {
+    cursor: pointer;
+    opacity: 0.8;
+    flex: 0.35 0 auto;
+    text-align: center;
+    &:hover {
+      color: #3a3aba;
+    }
+  }
+  .search {
+    position: relative;
+    flex-grow: 4;
+
+    input {
+      border-radius: 25px;
+      border: 1px solid #999;
+      padding: 16px 5px 16px 40px;
+      font-size: 15px;
+      opacity: 0.8;
+      width: 100%;
+    }
+    button {
+      position: absolute;
+      left: 3%;
+      top: 38%;
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+      opacity: 0.6;
+      border-radius: 50%;
+      // padding: 5px;
+    }
+  }
+  .icons {
+    display: flex;
+    flex: 0 1 115px;
+    .icon {
+      opacity: 0.6;
+      padding: 6px;
+      text-align: center;
+    }
+  }
+
+  .avatar {
+    background-color: #b03060;
+    border-radius: 50%;
+    padding: 7px;
+    // max-width: 32px;
+    // max-height: 32px;
+    text-align: center;
+    flex: 0 1 32px;
+    align-self: flex-start;
+    span {
+      color: #fff;
+      font-weight: 600;
+      font-family: $font-stack;
+    }
+  }
+}
+
+@media (min-width: 880px) {
+  .small {
+    display: none;
+  }
+  .big {
+    display: inline-block;
+    @include layout;
   }
 }

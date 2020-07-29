@@ -10,31 +10,98 @@
       src="https://kit.fontawesome.com/a457271637.js"
       crossorigin="anonymous"
     ></script>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="section">
-      <span class="bars">
-        <a href="#">
-          <i class="fas fa-bars fa-lg"></i>
-        </a>
-      </span>
-      <div class="logo-container">
-        <div class="img-work">
+    <!-- small navbar -->
+    <nav class="section">
+      <div class="small">
+        <span class="bars">
           <a href="#">
-            <img src="./Images/Udemy-logo.svg" alt="Udemy" />
+            <i class="fas fa-bars fa-lg"></i>
+          </a>
+        </span>
+        <div class="logo-container">
+          <div class="logo">
+            <a href="#">
+              <img src="./Images/Udemy-logo.svg" alt="Udemy" />
+            </a>
+          </div>
+        </div>
+        <span class="search">
+          <a href="#">
+            <i class="fas fa-search fa-lg"></i>
+          </a>
+        </span>
+        <span class="cart">
+          <a href="#">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+          </a>
+        </span>
+      </div>
+
+      <!-- end of small navbar -->
+      <!-- big navbar -->
+      <div class="big">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="#">
+              <img src="./Images/Udemy-logo.svg" alt="Udemy" />
+            </a>
+          </div>
+        </div>
+        <div class="text">
+          <p>Categories</p>
+        </div>
+        <div class="search">
+          <input type="text" name="search" placeholder="Search for anything" />
+          <button type="submit" for="search">
+            <i class="fas fa-search fa-lg fa-lg"></i>
+          </button>
+        </div>
+        <div class="text">
+          <a href="#">
+            <p>Udemy for Business</p>
           </a>
         </div>
+        <div class="text">
+          <a href="#">
+            <p>Teach on Udemy</p>
+          </a>
+        </div>
+        <div class="text">
+          <a href="#">
+            <p>My Courses</p>
+          </a>
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="#">
+              <i class="far fa-heart fa-lg"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#">
+              <i class="far fa-bell fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <a href="#">
+          <div class="avatar">
+            <span>LL</span>
+          </div>
+        </a>
       </div>
-      <span class="search">
-        <a href="#">
-          <i class="fas fa-search fa-lg"></i>
-        </a>
-      </span>
-      <span class="cart">
-        <a href="#">
-          <i class="fas fa-shopping-cart fa-lg"></i>
-        </a>
-      </span>
-    </section>
+      <!-- end of big navbar -->
+    </nav>
   </body>
 </html>
